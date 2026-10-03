@@ -1,0 +1,11 @@
+fastapi_server/
+│
+├── main.py                 # Точка входа (запуск Uvicorn)
+├── config.py               # Конфигурация (константы, настройки)
+├── database.py             # Хранилище данных (в реальном проекте тут будет Async SQLAlchemy)
+├── socketio_server.py      # Инициализация FastAPI и SocketIO
+└── handlers/               # Папка с обработчиками событий (модульность!)
+    ├── __init__.py
+    ├── connection.py       # Подключение, отключение, регистрация
+    ├── rooms.py            # Вход/выход из групп (столов)
+    └── messaging.py        # Обмен сообщениями и ключами
